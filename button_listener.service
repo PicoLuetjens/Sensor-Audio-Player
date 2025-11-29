@@ -1,0 +1,12 @@
+[Unit]
+Description=Button Listener (Sensor Control)
+After=bluetooth.service sound.target network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 /opt/sensor/button_listener.py
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=default.target
