@@ -5,6 +5,7 @@ This will play given audio files via bluetooth speaker if the sensor is triggere
 - audio files -> /home/user/ (need to be wav or ogg files)
 - python skripts -> /opt/sensor/ (give user execution privileges to both)
 - in button_listener.py put your speaker mac adress as target (line 19)
+- in button_listener.py put your username in the target folder string(line 22)
 - create user service -> ~/.config/systemd/user/
 - enable and start the service that will manage the scripts via systemctl
 

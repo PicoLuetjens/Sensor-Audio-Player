@@ -19,7 +19,7 @@ GPIO.setup(PLAY_BTN, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 DEVICE_MAC = "{MAC_ADRESS}"
 CONNECTED_SOUND = "/usr/share/sounds/alsa/Front_Center.wav"
 SENSOR_SCRIPT = "/opt/sensor/sensor.py"
-AUDIO_DIR = "/home/pi"  # where your audio files are stored
+AUDIO_DIR = "/home/{USER}"  # where your audio files are stored
 
 # ---------------- FUNCTION TO CONNECT SPEAKER ----------------
 def connect_speaker():
